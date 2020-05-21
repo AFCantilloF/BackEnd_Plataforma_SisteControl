@@ -8,7 +8,7 @@ class NivelesAdmin(admin.ModelAdmin):
 class RolSdmin(admin.ModelAdmin):
     list_display = ('nombre', 'apellido', 'email', 'email')
     search_fields = ('nombre','apellido','email')
-    list_filter = ('id_nivel_id',)
+    list_filter = ('nivel_id',)
 
 admin.site.register(Niveles,NivelesAdmin)
 admin.site.register(Rol,RolSdmin)

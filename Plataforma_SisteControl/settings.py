@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Plataforma_SisteControl.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/Users/Administrador/Desktop/Plataforma_SisteControl/login/templates/login'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
