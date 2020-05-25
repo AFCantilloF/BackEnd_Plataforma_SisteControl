@@ -5,11 +5,9 @@ Inicio
 {%endblock%}
 
 {%block content%}
-
-<p> 
-    Usuarios:
-    asdsf
-    
-</p>
-
+{% for level in all_users%}
+<li>
+    <a href="/inicio/{{Rol.id}}/"> {{Rol.nombre}} </a>
+</li>
+{% endfor %}
 {%endblock%}

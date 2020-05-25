@@ -6,7 +6,7 @@ class Niveles(models.Model):
     nivel = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.nivel
+        return self.nivel 
 
 class Rol(models.Model):
     nombre = models.CharField(max_length=50)
@@ -15,5 +15,8 @@ class Rol(models.Model):
     Tel = models.CharField(max_length=10)
     pasword = models.CharField(max_length=20)
     nivel = models.ForeignKey(Niveles, null=True, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.nombre + '-' + self.pasword
 
 

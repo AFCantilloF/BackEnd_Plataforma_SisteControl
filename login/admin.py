@@ -5,11 +5,11 @@ from login.models import Rol,Niveles
 class NivelesAdmin(admin.ModelAdmin):
     list_display = ('id','nivel')
 
-class RolSdmin(admin.ModelAdmin):
-    list_display = ('nombre', 'apellido', 'email', 'email')
+class RolAdmin(admin.ModelAdmin):
+    list_display = ('nombre', 'apellido', 'email')
     search_fields = ('nombre','apellido','email')
     list_filter = ('nivel_id',)
 
 admin.site.register(Niveles,NivelesAdmin)
-admin.site.register(Rol,RolSdmin)
+admin.site.register(Rol,RolAdmin)
 
