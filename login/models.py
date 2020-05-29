@@ -17,6 +17,6 @@ class Rol(models.Model):
     nivel = models.ForeignKey(Niveles, null=True, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.nombre + '-' + self.pasword
+        return 'El nombre es %s y la contraseña es %s' %(self.nombre,self.pasword)
 
 

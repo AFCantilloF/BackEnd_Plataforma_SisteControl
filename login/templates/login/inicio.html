@@ -5,9 +5,9 @@ Inicio
 {%endblock%}
 
 {%block content%}
-{% for level in all_users%}
+{% for user in all_users%}
 <li>
-    <a href="/inicio/{{Rol.id}}/"> {{Rol.nombre}} </a>
+    <a href="/inicio/user/{{user.nivel_id}}/"> {{user.nombre}} </a>
 </li>
 {% endfor %}
 {%endblock%}
